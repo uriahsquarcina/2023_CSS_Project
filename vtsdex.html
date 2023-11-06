@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VTSD Layout Example</title>
+
+    <style>
+        body{
+            background: black;
+        }
+        .container {
+            width: 1200px;
+            background-color: grey;
+            margin: auto;
+        }
+
+        .navbar {
+            width: 1200px;
+            height: 52px;
+            background-color: red;
+        }
+        .header{
+            width: 1200px;
+            height: 104px;
+            background-color: blue;
+        }
+        .sliderPic{
+            width: 946px;
+            height: 493px;
+            background-color: yellow;
+            float:left;
+        }
+        .sliderNav{
+            width: 254px;
+            height: 493px;
+            background-color: green;
+            float: left;
+        }
+
+        .cardHolder{
+            width: 900px;
+            height: 832px;
+            background-color: purple;
+            float: left;
+        }
+        .upcomingEvents{
+            width: 100%;
+            height: 832px;
+            background-color: white;
+        }
+        .card{
+            height: 359px;
+            width: 286px;
+            background-color: white;
+            float:left;
+            margin: 10px 7px 0px 7px;
+        }
+
+        .cardImage{
+            width: 100%;
+            height: auto;
+
+            padding-top: 30px;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li{
+            float: left;
+            /* barrier between links option */
+            border-right: 1px solid white;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        li a:hover{
+            background-color: #111;
+        }
+        /* Optional Active Class for Awesom Navs */
+        .active{
+            background-color: darkgreen;
+        }
+
+        .advertise{
+            float: right;
+            background-color: red;
+            border-right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <ul>
+            <!-- The current page gets the active class -->
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Mailing List</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="advertise"><a href="#">Give Me Money</a></li>
+        </ul>
+    </div>
+    <div class="header">Header Goes Here</div>
+    <div class="sliderPic">Slider Pictures Go Here</div>
+    <div class="sliderNav">Slider Navigation Go Here</div>
+    <div class="cardHolder">
+
+        <div class="card"><img class="cardImage" src="../img/staticExample.jpg" /></div>
+        <div class="card">A Card</div>
+        <div class="card">A Card</div>
+        <div class="card">A Card</div>
+        <div class="card">A Card</div>
+        <div class="card">A Card</div>
+
+
+    </div>
+    <div class="upcomingEvents">Events</div>
+
+
+</div>
+<!--
+<div style="border: 1px solid black;
+            padding: 25px;
+            background-color: darkgray;">Padding Example</div>
+
+<div style="border: 1px solid black;
+            margin: 25px;
+            background-color: white;">Margins Example</div>
+-->
+
+
+</body>
+</html>
